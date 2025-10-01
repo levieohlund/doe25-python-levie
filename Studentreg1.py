@@ -1,14 +1,15 @@
 #Student registration system
 
 # NEEDS
-#datastruktur för studenter 
+# datastruktur för studenter
 # loop för menyn
 # Menyn har 3 val: add studen 2. list student. 4. quit.
 
-student_list =[]
+student_list = []
+
+max_students = 10
 
 print("Welcome to the studentregister!")
-
 while True:
     print("--MENU--")
     print("1. Add student")
@@ -52,6 +53,8 @@ while True:
     sum_age = 0
     for student in student_list:
         sum_age += int(student["Age"])
+
+
 #beräkna genomsnitts ålder på studenterna
 
     if student_list:
